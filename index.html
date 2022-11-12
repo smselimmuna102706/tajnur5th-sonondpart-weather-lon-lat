@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather Report in Javascript</title>
+
+      <!-- bootstrap cdn  -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+      <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+      <div class="container">
+            <div class="row">
+                  <div class="col-md-2"></div>
+                  <div class="col-md-8">
+                        <form class="m-auto py-5">
+                              <div class="row">
+                                    <div class="col-md-10">
+                                          <div class="input-group mb-3">
+                                                <input type="text" id="city-name" placeholder="Enter the City name ..." class="form-control">
+                                          </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                          <div class="input-group-append">
+                                                <button type="button" class="btn btn-danger" id="clickBtn">Search</button>
+                                          </div>
+                                    </div>
+                              </div>
+                              
+                        </form>
+                  </div>
+                  <div class="col-md-2"></div>
+            </div>
+
+            <div class="row">
+                  <div class="col-md-12">
+                        <div class="weather-status text-white text-center">
+                              <img id="weather-icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
+
+                              <h1 id="city">Dhaka</h1>
+                              <h3><span id="temperature">25.67</span>&deg;C</h3>
+                              <h1 id="condition">Clouds</h1>
+
+                              <h4 id="Latitude">Latitude</h4>
+                              <h4 id="Longitude">Longitude</h4>
+
+
+                        </div>
+                  </div>
+            </div>
+
+            
+      </div>
+      
+      <script src="./app.js"></script>
+</body>
+</html>
